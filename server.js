@@ -42,4 +42,8 @@ app.post("/recommend", async (req, res) => {
 });
 
 const PORT = 5000;
+app.get('/', (req, res) => {
+  res.send('✅ Server is running! (check)');
+});
+
 app.listen(PORT, () => console.log(`Backend running on http://localhost:${PORT}`));
