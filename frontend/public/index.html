@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library Book Finder</title>
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-2xl shadow-md w-96">
+      <h1 class="text-2xl font-semibold mb-6 text-center text-indigo-600">
+        📚 Library Book Recommender
+      </h1>
+      <input
+        id="genre"
+        class="border rounded p-2 w-full mb-3"
+        placeholder="Genre (e.g., historical fiction)"
+      />
+      <input
+        id="length"
+        class="border rounded p-2 w-full mb-3"
+        placeholder="Length (e.g., under 400 pages)"
+      />
+      <input
+        id="theme"
+        class="border rounded p-2 w-full mb-3"
+        placeholder="Theme (e.g., adventure, mystery)"
+      />
+      <button
+        id="searchBtn"
+        class="bg-indigo-600 text-white rounded p-2 w-full hover:bg-indigo-700"
+      >
+        Get Recommendation
+      </button>
+      <p id="result" class="mt-4 text-gray-800 text-sm"></p>
+    </div>
+  </body>
+</html>
