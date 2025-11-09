@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use("/mcp", mcpRouter);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`MCP Server running on port ${PORT}`));
 
 
